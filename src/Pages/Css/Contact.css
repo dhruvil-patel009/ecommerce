@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 10rem 5rem;
+  display: flex;
+  animation: fadeIn .5s ease;
+}
+
+.contact-section {
+  width: 100%;
+}
+
+.contact-banner {
+  height: 40rem;
+  margin-top: 2rem;
+  background: #f3f3f3;
+  width: 100%;
+  display: flex;
+}
+
+.contact-banner .contact-info {
+  /* width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-basis: 50%;
+  overflow: hidden;
+}
+
+.contact-banner .contact-info .info {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px auto;
+  gap: 45px;
+
+}
+
+.contact-banner .contact-info .info .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center;
+  margin: 82px auto; */
+  width: 80%;
+}
+
+
+
+.contact-banner .contact-info .info .box .icon {
+  font-size: 30px;
+  color: dimgray;
+}
+
+.text {
+  padding: 0 25px;
+}
+
+.phone_email {
+  padding: 0 170px 0 0;
+}
+
+.contact-banner .contact-map {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.contact-banner .contact-map p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 50px;
+  font-weight: 700;
+  line-height: 1.5;
+
+}
+
+iframe {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 560px) {
+
+  .contact-container {
+    padding: 0;
+  }
+
+  .contact-section h1 {
+    padding: 5rem 0;
+  }
+
+  .contact-banner {
+    flex-direction: column;
+    height: 70rem;
+    margin: 0 0 140px 0;
+  }
+
+  .phone_email {
+    padding: 0 0 0 18px;
+  }
+
+  .contact-banner .contact-info .info .box {
+    justify-content: normal;
+  }
+}
+
+/* tablet screen */
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .contact-container {
+    padding: 10rem 0;
+  }
+
+}

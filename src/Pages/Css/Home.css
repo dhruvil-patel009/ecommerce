@@ -1,0 +1,26 @@
+.content {
+    min-height: 100vh;
+    position: relative;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease;
+}
+
+/* media query */
+
+@media (min-width: 300px) and (max-width: 560px) {
+    .content {
+        padding: 5rem 1rem;
+        flex-direction: column;
+    }
+}
+
+
+/* tablet scrren  */
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    .content {
+        padding: 2rem 3rem;
+    }
+}
